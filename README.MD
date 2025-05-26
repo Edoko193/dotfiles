@@ -10,7 +10,7 @@ Hello beautiful people, This is my dotfiles. I use Arch BTW. Specially thanks to
 ![aerialsddm](./aerialsddm.gif)
 - Waybar(Below customizations are credits to myself :P)
 ![waybar](./waybar.png)
-- Browser, File Manager, Notification Daemon (Zen Browser/Thunar/Dunst)
+- Browser, Terminal, Notification Daemon (Zen Browser/Kitty/Dunst)
 ![zenkitty](./zenkitty.png)
 - IDE/File Editor/Menu Runner(Lite-xl(credit to all plugin owners), Thunar(sweet gtk theme/icons), Fuzzel)
 ![litexl-thunar-fuzzel](./litexl-thunar-fuzzel.png)
