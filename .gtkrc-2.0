@@ -1,0 +1,5 @@
+gtk-theme-name=Sweet
+gtk-icon-theme-name=Sweet-Teal-Filled
+gtk-icon-sizes = "panel-menu=48,48:panel=48,48:gtk-menu=48,48:gtk-large-toolbar=48,64:gtk-small-toolbar=48,48:gtk-button=48,48:gtk-dnd=48,48:gtk-dialog=48,48"
+gtk-cursor-theme-name="oreo_teal_cursors"
+

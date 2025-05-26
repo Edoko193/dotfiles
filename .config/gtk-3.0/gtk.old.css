@@ -1,0 +1,11 @@
+.window-frame {margin: 0; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ border-radius: 0 0 8px 8px;}
+
+.titlebar, .decoration, window, window.background, window.titlebar,{
+ border-radius: 0 0 8px 8px;
+}
+
+* {
+   -ThunarAbstractIconView-row-spacing: 2;
+   -ThunarAbstractIconView-column-spacing:0;
+ }

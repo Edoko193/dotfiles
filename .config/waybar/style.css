@@ -1,0 +1,127 @@
+* {
+    border: none;
+    font-family: Font Awesome, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    /*color: rgba(9, 187, 137, 1);*/
+    color: rgba(11, 209, 167, 0.85);
+    border-radius: 20px;
+    opacity: 1;
+}
+tooltip {
+    background-color: rgba(255, 255, 255, 0.71);
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.4);
+}
+tooltip label {
+    font-family: Terminess Nerd Font;
+    color: rgba(11, 209, 167, 0.7);
+    border: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    background-color: rgba(11, 209, 167, 0);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+*:hover  {
+    background-color: rgba(11, 209, 167, 1);
+    box-shadow: 0px 0px 5px 2px rgba(11,209,167,0.5);
+    color: #fff;
+}
+/*-----module groups----*/
+.modules-right {
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.85);
+    margin: 2px 10px 0 0;
+}
+.modules-center {
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.85);
+    margin: 2px 0 0 0;
+}
+.modules-left {
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+    margin: 2px 0 0 5px;
+    background-color: rgba(255,255,255,0.85);
+}
+/*-----modules indv----*/
+#workspaces button {
+
+}
+#workspaces button.active {
+    /*background-color: rgba(11, 209, 167, 0.85);*/
+    color: rgba(255, 255, 255, 1);
+}
+#workspaces button.focused {
+    /*background-color: rgba(255,255,255,0.85);*/
+}
+#workspaces:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+#workspaces button:hover {
+    background-color: rgba(11, 209, 167, 0.85);
+    color: rgba(255, 255, 255, 1);
+}
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#custom-power,
+#bluetooth,
+#backlight,
+#custom-menu,
+#privacy,
+#privacy-item,
+#privacy-item.screenshare,
+#privacy-item.audio-in,
+#privacy-item.audio-out,
+#idle_inhibitor {
+    padding: 0 8px;
+}
+#clock,
+#custom-weather,
+#mpris {
+    padding: 0 15px 0 15px;
+}
+#mode {
+    color: #fff;
+    font-weight: bold;
+}
+#custom-power {
+    /* background-color: rgba(0,119,179,0.6); */
+    /* border-radius: 100px; */
+    margin: 5px 5px;
+    padding: 1px 1px 1px 6px;
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+    color: #2dcc36;
+}
+#pulseaudio.muted {
+    color: #cc3436;
+}
+#battery.charging {
+    color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+    color: #e6e600;
+}
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}
+#temperature.critical {
+    color: #cc3436;
+}
+/*-----Colors----*/
+/*
+ *rgba(0,85,102,1),#005566 --> Indigo(dye)
+ *rgba(0,43,51,1),#002B33 --> Dark Green
+ *rgba(0,153,153,1),#009999 --> Persian Green
+ *
+ */
+

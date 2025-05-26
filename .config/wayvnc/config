@@ -1,0 +1,6 @@
+use_relative_paths=true
+address=0.0.0.0
+enable_auth=true
+username=ed2472138wqe12
+password=!'(EJ^12810ej'!E12*
+rsa_private_key_file=rsa_key.pem

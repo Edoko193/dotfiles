@@ -1,0 +1,398 @@
+/** Global *******************************************/
+*{
+    all: unset;
+    font-family: feather;
+    font-family: IosevkaNerd;
+}
+
+/** Background ***************************************/
+.bg {
+    background-image: url("images/bg.png");
+    background-color: rgba(11, 209, 167, 0.85);
+    opacity: 1;
+}
+
+/** Generic window ***********************************/
+.genwin {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    color: rgba(11, 209, 167, 0.85);
+    margin :10px;
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.5);
+}
+
+.genwin:hover{
+    background-color:rgba(11, 209, 167, 1);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.7);
+    margin: 10px;
+}
+/** Profile ******************************************/
+.face {
+    background-size: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin: 65px 0px 0px 0px;
+    border-radius: 100%;
+}
+
+.fullname {
+    color: rgba(11, 209, 167, 1);
+    font-size : 30px;
+    font-weight : bold;
+}
+
+.username {
+    color: rgba(11, 209, 167, 1);
+    font-size : 22px;
+    font-weight : bold;
+    margin : -15px 0px 0px 0px;
+}
+
+/** System ********************************************/
+.iconcpu, .iconmem, .iconbright, .iconbat {
+    font-size : 32px;
+    font-weight : normal;
+}
+.iconcpu {
+    color: #BF616A;
+}
+.iconmem {
+    color: #A3BE8C;
+}
+.iconbright {
+    color: #EBCB8B;
+}
+.iconbat {
+    color: #88C0D0;
+}
+
+.cpu_bar, .mem_bar, .bright_bar, .bat_bar, scale trough {
+    all: unset;
+    background-color: #3A404C;
+    border-radius: 16px;
+    min-height: 28px;
+    min-width: 240px;
+}
+
+.cpu_bar, .mem_bar, .bright_bar, .bat_bar, scale trough highlight {
+    all: unset;
+    border-radius: 16px;
+}
+
+.cpu_bar scale trough highlight {
+    background-color: #BF616A;
+}
+.mem_bar scale trough highlight {
+    background-color: #A3BE8C;
+}
+.bright_bar scale trough highlight {
+    background-color: #EBCB8B;
+}
+.bat_bar scale trough highlight {
+    background-color: #88C0D0;
+}
+
+/** Clock ********************************************/
+.time_hour, .time_min {
+    font-size : 70px;
+    font-weight : bold;
+}
+.time_hour {
+    margin : 15px 0px 0px 20px;
+}
+.time_min {
+    margin : 0px 0px 10px 0px;
+}
+
+.time_mer {
+    font-size : 40px;
+    font-weight : bold;
+    margin : 20px 0px 0px 0px;
+}
+
+.time_day {
+    font-size : 30px;
+    font-weight : normal;
+    margin : 0px 0px 20px -20px;
+}
+
+/** Uptime ********************************************/
+.icontimer {
+    font-size : 90px;
+    font-weight : normal;
+}
+
+.uphour {
+    font-size : 42px;
+    font-weight : bold;
+}
+
+.upmin {
+    font-size : 32px;
+    font-weight : bold;
+}
+
+/** Music ***************************************/
+.album_art {
+    background-size: 240px;
+    min-height: 240px;
+    min-width: 240px;
+    margin: 20px;
+    border-radius: 14px;
+}
+
+.song {
+    font-size : 24px;
+    font-weight : bold;
+    margin : 40px 0px 0px 0px;
+}
+
+.artist {
+    font-size : 16px;
+    font-weight : normal;
+    margin : 0px 0px 15px 0px;
+}
+
+.btn_prev, .btn_play, .btn_next {
+    font-family: Iosevka Nerd Font;
+}
+.btn_prev {
+    font-size : 32px;
+    font-weight : normal;
+}
+.btn_play {
+    font-size : 48px;
+    font-weight : bold;
+}
+.btn_next {
+    font-size : 32px;
+    font-weight : normal;
+}
+
+.music_bar scale trough highlight {
+    all: unset;
+    background-color: rgba(11, 209, 167, 0.85);
+    border-radius: 8px;
+}
+.music_bar scale trough {
+    all: unset;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    min-height: 20px;
+    min-width: 310px;
+    margin : 10px 0px 0px 0px;
+}
+
+/** Weather ***************************************/
+.iconweather {
+    color: rgba(11, 209, 167, 1);
+    font-family: IosevkaNerdFont;
+    font-weight : normal;
+    font-size : 120px;
+    margin : 15px 0px 0px 30px;
+}
+
+.label_temp {
+    font-size : 80px;
+    font-weight : bold;
+    margin : -15px 30px 0px 0px;
+}
+
+.label_stat {
+    font-size : 38px;
+    font-weight : bold;
+}
+
+.label_quote {
+    font-size : 18px;
+    font-weight : normal;
+}
+
+/** Applications ***************************************/
+.appbox {
+    margin : 15px 0px 0px 25px;
+}
+
+.app_fox, .app_telegram, .app_discord, .app_terminal,
+.app_files, .app_geany, .app_code, .app_gimp, .app_vbox {
+    background-repeat: no-repeat;
+    background-size: 64px;
+    min-height: 64px;
+    min-width: 64px;
+    margin: 8px 8px 0px 8px;
+}
+
+.app_fox {}
+.app_telegram {}
+.app_discord {}
+.app_terminal {}
+.app_files {}
+.app_geany {}
+.app_code {}
+.app_gimp {}
+.app_vbox {}
+
+/** Links ***************************************/
+.iconweb, .iconmail {
+    color: #FFFFFF;
+    font-family: IosevkaNerdFont;
+    font-size : 70px;
+    font-weight : normal;
+}
+.iconmail {
+    color: #DF584E;
+}
+
+.app-lapce {
+    min-height: 145px;
+    min-width: 141px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 72px;
+    box-shadow: 0px 0px 5px 2px  rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.app-duckduckgo {
+    min-height: 145px;
+    min-width: 141px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 72px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.app-steam {
+    min-width: 141px;
+    min-height: 145px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 72px;
+}
+.app-youtube {
+    min-width: 141px;
+    min-height: 145px;
+    border-radius: 16px;
+    color: #FF0000;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 72px;
+}
+.app-mail {
+    margin: 10px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+}
+
+.mailbox {
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    margin: 48px 0px 48px 0px;
+}
+.label_mails {
+    color: #404040;
+    font-size : 32px;
+    font-weight : bold;
+    margin: 0px 12px 0px 12px;
+}
+
+/** Power buttons ***************************************/
+.btn_logout, .btn_sleep, .btn_reboot, .btn_poweroff {
+    font-size : 48px;
+    font-weight : bold;
+}
+
+.btn_logout {
+    color: #BF616A;
+}
+.btn_sleep {
+    color: #A3BE8C;
+}
+.btn_reboot {
+    color: #EBCB8B;
+}
+.btn_poweroff {
+    color: #88C0D0;
+}
+
+/** Home folders ***************************************/
+.hddbox {
+    background-color : rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin : 15px;
+}
+.hddicon {
+    font-family: IosevkaNerdFont;
+    font-size : 70px;
+    font-weight : normal;
+    margin : 25px 20px 25px 40px;
+}
+.hdd_label {
+    font-size : 48px;
+    font-weight : bold;
+    margin : 0px 0px 0px 15px;
+}
+.fs_sep {
+    color: rgba(255, 255, 255, 1);
+    font-size : 36px;
+    font-weight : bold;
+}
+
+.iconfolder1, .iconfolder2, .iconfolder3, .iconfolder4, .iconfolder5, .iconfolder6  {
+    font-family: IosevkaNerdFont;
+    font-size : 32px;
+    font-weight : normal;
+    margin : 0px 0px 0px 75px;
+}
+.iconfolder1 {
+    color: #BF616A;
+}
+.iconfolder2 {
+    color: #A3BE8C;
+}
+.iconfolder3 {
+    color: #EBCB8B;
+}
+.iconfolder4 {
+    color: #81A1C1;
+}
+.iconfolder5 {
+    color: #B48EAD;
+}
+.iconfolder6 {
+    color: #88C0D0;
+}
+
+.label_folder1, .label_folder2, .label_folder3, .label_folder4, .label_folder5, .label_folder6  {
+    font-size : 22px;
+    font-weight : normal;
+    margin : 0px 0px 0px 30px;
+}
+.label_folder1 {
+    color: #BF616A;
+}
+.label_folder2 {
+    color: #A3BE8C;
+}
+.label_folder3 {
+    color: #EBCB8B;
+}
+.label_folder4 {
+    color: #81A1C1;
+}
+.label_folder5 {
+    color: #B48EAD;
+}
+.label_folder6 {
+    color: #88C0D0;
+}
+
+/** EOF *************************************************/
+

@@ -1,0 +1,1 @@
+return { path = "/home/ed-home/.config/hypr", documents = {["views"]={[1]={["text"]=false,["scroll"]={["y"]=6400.0,["x"]=0},["selection"]={[1]=337,[2]=36,[3]=337,[4]=36},["active"]=false,["filename"]="hyprland.conf",["type"]="doc"}},["type"]="leaf"}, directories = {} }

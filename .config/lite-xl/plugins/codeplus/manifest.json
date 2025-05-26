@@ -1,0 +1,12 @@
+{
+  "addons": [
+    {
+      "id": "codeplus",
+      "mod_version": "3",
+      "name": "codeplus",
+      "path": ".",
+      "type": "plugin",
+      "version": "0.1"
+    }
+  ]
+}

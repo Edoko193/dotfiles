@@ -1,0 +1,140 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    // "height": 0,
+    // "width": 0,
+    // "margin": "",
+    // "margin-<top|left|bottom|right>": "",
+    "spacing": 4,
+    "mode": "dock",
+    // "start_hidden": false
+    // "modifier-reset": "",
+    // "exclusive": true,
+    "fixed-center": true,
+    "reload_style_on_change": true,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/weather", "clock", "mpris"],
+    /* "modules-right": ["custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
+    "modules-right": ["tray", "custom/scratchpad-indicator", "privacy", "bluetooth", "backlight", "memory", "network", "pulseaudio", "custom/power"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "  ",
+            "active": "  "
+        },
+    },
+    "mpris": {
+        "format": "{player_icon} <i>{title} - {artist}</i>",
+        "format-paused": "{status_icon} <i>{title}</i>",
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "▶"
+        },
+        "ignored-players": ["firefox"]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "on-click": "bash /home/dg/.local/bin/toggleRemote"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "bluetooth": {
+        "format": "{icon}",
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
+        "format-on": "󰂯",
+        "format-connected": "󰂱",
+        "on-click": "~/.config/waybar/bluetooth_toggle.sh",
+    },
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 18,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "backlight": {
+        "interval": 20,
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", " ", "", "", "","" , "󰽢"]
+    },
+    "network": {
+        "format-wifi": "{signalStrength}%  ",
+        "format-ethernet": "{ifname} ",
+        "format-disconnected": "",
+        "max-length": 50,
+        "on-click": "kitty -e 'nmtui'"
+    },
+    "clock": {
+        "format": "󰺗  {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+        // "on-click": "gnome-calendar"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} ",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "0% {icon} ",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/weather": {
+        "interval": "900",
+        "exec": "~/.config/waybar/weather.sh"
+    },
+    "custom/power": {
+        "format": " ",
+        "on-click": "~/.config/eww/dashboard/launch_dashboard"
+    },
+    "custom/scratchpad-indicator": {
+        "format-text": "{}hi",
+        "return-type": "json",
+        "interval": 3,
+        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
+        "exec-if": "exit 0",
+        "on-click": "swaymsg 'scratchpad show'",
+        "on-click-right": "swaymsg 'move scratchpad'"
+    }
+}
+

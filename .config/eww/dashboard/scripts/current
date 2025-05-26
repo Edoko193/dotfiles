@@ -1,0 +1,5 @@
+#!/bin/bash
+CURRENT=$(playerctl metadata --format '{{position}}')
+TOTAL=$(playerctl metadata | grep length | awk '{print $3}')
+RESULT=$(($CURRENT*100/$TOTAL))
+echo $RESULT
