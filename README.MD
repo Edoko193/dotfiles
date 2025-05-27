@@ -22,3 +22,5 @@ Hello beautiful people, This is my dotfiles. I use Arch BTW. Specially thanks to
 Also Special thanks to all hardened-kernel devs, Arch Linux devs, xfce devs, kde devs, gtk devs, waybar devs, dunst devs, elkovar for widgets, red hat for plymouth(and other stuff), hyprswitch main developer for being nice, flatpak devs and every other dev for making this possible for us.
 
 I also have a plymouth theme made by myself but It didn't finished yet I also thinking about making seperate repo about that in 3-5 days. I will update here when it finished.
+
+**If you are owner of the any of these wallpapers or anything that has copyright open an issue in git or email to edoko192@gmail.com I will take those claims very seriously and remove from my repo immediately.**
