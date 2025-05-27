@@ -2,7 +2,7 @@
 
 Hello beautiful people, This is my dotfiles. I use Arch BTW. Specially thanks to vaxry for Hyprland and Hypr family.
 
-- Lockscreen (Hyprlock, credits to [MrVivekRajan/Hyprlock-Styles](https://github.com/MrVivekRajan/Hyprlock-Styles) I also added html for automatically bluring background so you can pick the background freely.)
+- Lockscreen (Hyprlock, credits to [MrVivekRajan/Hyprlock-Styles](https://github.com/MrVivekRajan/Hyprlock-Styles) I also added html for automatically bluring background so you can pick the background freely. Also profile photo is from here: https://www.pixiv.net/en/artworks/129953121)
 ![lockscreen](./lockscreen.png)
 - Dashboard(Eww, credits to [adi1090x/widgets](https://github.com/adi1090x/widgets) he was my starting point)
 ![dashboard](./dashboard.png)
